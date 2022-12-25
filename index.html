@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="src/styles/styles.css" />
+        <link rel="icon" type="image/x-icon" href="src/images/favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="homeLink">
+                    <img src="src/images/check-list.png" height="50" alt="To Do" />
+                    To Do
+                </a>
+            </nav>
+            <section id="searchSection">
+                <label for="search" id="searchLabel">Search</label>
+                <input type="text" placeholder="" id="search" />
+                <img id="searchIcon" src="src/images/loupe.png" alt="Search" />
+            </section>
+        </header>
+        <main>
+            <section>
+                <h1>My Tasks</h1>
+            </section>
+            <section class="genericTaskList" id="taskList">
+                <div class="task" id="addTask">
+                    <div class="taskName">
+                        <div class="radio leftElement"><span id="plus">+</span></div>
+                        <input type="text" id="addTaskInput" placeholder="Add task" />
+                    </div>
+                    <div id="options">
+                        <button disabled id="addTaskButton">Add task</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Done Tasks</h2>
+            </section>
+            <section class="genericTaskList" id="doneTaskList"></section>
+        </main>
+        <script type="module" src="src/js/index.js"></script>
+    </body>
+</html>
